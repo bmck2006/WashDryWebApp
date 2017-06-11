@@ -10,10 +10,25 @@
         <h2>Washer Dryer Status Page</h2>
     </div>
     <div class="row">
-        <div class="units1"></div>
-        <div class="units1"></div>
-        <div class="units2"></div>
-        <div class="units2"></div>
+        <div class="units1">
+            <!-- TODO: fix conditionals within HTML-->
+            {% if wash1status == 'available' %}
+                <p>Available</p>
+            {% elif wash1status == 'finishing' %}
+                <p>Finishing...</p>
+            {% else %}
+                <p>In use</p>
+            {% endif %}
+        </div>
+        <div class="units1">
+
+        </div>
+        <div class="units2">
+
+        </div>
+        <div class="units2">
+
+        </div>
     </div>
 
 
